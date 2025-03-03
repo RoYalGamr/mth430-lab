@@ -26,7 +26,7 @@ for m = 3:M
 
     yAB(1) = 1;
     for i = 1:3
-        yAB(i+1) = yAB(i) + (h*f(yAB(i))) + (h*h*ff(yAB(i))/2) + (h*h*h*fff(yAB(i))/6);
+        yAB(i+1) = yAB(i) + (h*f(yAB(i))) + (h*h*ff(yAB(i))/2) + (h*h*h*f(yAB(i))/6);
     end
 
     for i = 4:N
