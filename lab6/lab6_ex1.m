@@ -44,7 +44,6 @@ for po = 3:M
     t = a + h*([1:N]');
     y = zeros(N,1);
     dy = zeros(N,1);
-    ddy = zeros(N,1);
     g = zeros(N,1);
     g(1) = -alpha/(h*h);
     g(end) = -beta/(h*h);

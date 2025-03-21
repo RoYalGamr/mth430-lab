@@ -41,7 +41,6 @@ for po = 3:M
     t = a + h*([1:N]');
     y = zeros(N,1);
     dy = zeros(N,1);
-    ddy = zeros(N,1);
     g = zeros(N,1);
     g(1) = -alpha/(h*h);
     g(end) = -beta/(h*h);
@@ -72,7 +71,7 @@ for po = 3:M
         end
         for i = 1:N-1
             Fj(i,i+1) = dfddy(a+i*h,y(i),dy(i))/(2*h);
-            Fj(i+1,i) = -dfddy(a+i*h,y(i+1),dy(i+1))/(2*h);
+            Fj(i+1,i) = -dfddy(a+(i+1)*h,y(i+1),dy(i+1))/(2*h);
         end
         dH = A/(h*h) - Fj;
 
