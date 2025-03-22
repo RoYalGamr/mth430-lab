@@ -38,7 +38,7 @@ for po = 3:M
     end
 
     % Initialise values;
-    t = a + h*([1:N]');
+    t = a + h*([1:N]);
     y = zeros(N,1);
     dy = zeros(N,1);
     g = zeros(N,1);
