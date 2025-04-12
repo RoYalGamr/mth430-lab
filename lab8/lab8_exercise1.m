@@ -2,8 +2,8 @@ clc; clear; close all;
 
 % Domain and grid parameters
 N = 128;               % N+1 grid points in each coordinate (0 to 1)
-h = 1.0 / N;          % grid spacing
-xv = linspace(-1,3,N+1);
+h = 2.0 / N;          % grid spacing
+xv = linspace(-1,1,N+1);
 yv = linspace(-1,1,N+1);
 nInterior = (N-1)^2;  % number of unknowns (only interior points)
 
